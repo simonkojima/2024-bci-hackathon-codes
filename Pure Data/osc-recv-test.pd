@@ -1,0 +1,8 @@
+#N canvas 308 323 628 684 12;
+#X obj 80 146 oscparse;
+#X obj 74 238 print OSC_RAW;
+#X obj 78 181 list trim;
+#X obj 81 100 netreceive -u -b 7400;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;
